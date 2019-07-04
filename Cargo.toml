@@ -1,0 +1,24 @@
+[package]
+name = "AdventOfCode2015"
+version = "0.0.0"
+authors = ["bi3mer <colan@comcast.net>"]
+edition = "2018"
+
+[dependencies]
+md5 = "0.6.1"
+
+[[bin]]
+name = "01"
+path = "src/01.rs"
+
+[[bin]]
+name = "02"
+path = "src/02.rs"
+
+[[bin]]
+name = "03"
+path = "src/03.rs"
+
+[[bin]]
+name = "04"
+path = "src/04.rs"
