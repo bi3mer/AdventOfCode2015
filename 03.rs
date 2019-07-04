@@ -88,7 +88,7 @@ fn main() {
     println!("test case 1 passed: {}", part_1_solution(&"^>v<".to_string()) == 4);
     println!("test case 2 passed: {}", part_1_solution(&"^v^v^v^v^v".to_string()) == 2);
 
-    let file_name = "input.txt";
+    let file_name = "input/input03.txt";
     let content = fs::read_to_string(file_name)
         .expect("Unable to read file for some reason");
 

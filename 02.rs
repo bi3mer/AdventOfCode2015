@@ -36,7 +36,7 @@ fn calculate_ribbons(l: u32, w: u32, h: u32) -> u32{
 }
 
 fn main() {
-    let file_name = "input.txt";
+    let file_name = "input/input02.txt";
     let file = File::open(file_name).unwrap();
     let reader = BufReader::new(file);
 
