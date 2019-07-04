@@ -111,5 +111,5 @@ fn main() {
     }
 
     println!("\nOccurrences01: {}", count01);
-    println!("Occurrences02: {}", count02); // correct answer is 55
+    println!("Occurrences02: {}", count02);
 }
