@@ -1,7 +1,7 @@
-use std::fs;
 use std::env;
+use std::fs;
 
-fn get_length(string: &str) -> u16 {
+fn part1(string: &str) -> u16 {
     let mut size = 0;
     let mut index = 1;
 
@@ -25,8 +25,22 @@ fn get_length(string: &str) -> u16 {
         index += 1;
     }
     
-    println!("{} - {} = {}", string.len(), size, (string.len() as u16) - size);
     (string.len() as u16) - size
+}
+
+fn part2(string: &str) -> u16 {
+    let mut size = 0;
+    for character in string.chars() {
+        if character == '\\' {
+            size += 2;
+        } else if character == '"' {
+            size += 2
+        } else {
+            size += 1;
+        }
+    }
+    
+    (size + 2) - (string.len() as u16)
 }
 
 fn main() {
@@ -35,11 +49,14 @@ fn main() {
         .expect("Something went wrong reading the file.");
     
     let lines = content.split("\n");
-    let mut count = 0;
+    let mut part1_count = 0;
+    let mut part2_count = 0;
 
     for line in lines {
-        count += get_length(line);
+        part1_count += part1(line);
+        part2_count += part2(line);
     }
 
-    println!("Part 1: {}", count);
+    println!("Part 1: {}", part1_count);
+    println!("Part 2: {}", part2_count);
 }
