@@ -85,7 +85,7 @@ fn solve(gate_id: String, wires: &HashMap<String, String>, cache: &mut HashMap<S
 }
 
 fn main() {
-    let file = format!("{}/src/input/input07.txt", env::current_dir().unwrap().to_str().unwrap());
+    let file = format!("{}/input/input07.txt", env::current_dir().unwrap().to_str().unwrap());
     println!("{}", file);
     let content = fs::read_to_string(file)
         .expect("Something went wrong reading the file");
