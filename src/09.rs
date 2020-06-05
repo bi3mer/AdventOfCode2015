@@ -44,8 +44,9 @@ fn main() {
         }
     }
 
-    let mut lowest_distance = 1000000000;
-    // let mut best_path: Vec<&&str>;
+    let mut shortest_distance = 1000000000;
+    let mut longest_distance  = 0;
+
     for path in destinations.iter().permutations(destinations.len()) {
         let mut origin: &str = "";
         let mut path_distance = 0;
@@ -59,13 +60,15 @@ fn main() {
             }
         }
 
-        if path_distance < lowest_distance {
-            lowest_distance = path_distance;
+        if path_distance < shortest_distance {
+            shortest_distance = path_distance;
+        }
+
+        if path_distance > longest_distance {
+            longest_distance = path_distance;
         }
     }
 
-    // for dst in best_path {
-    //     println!("{}", dst);
-    // }
-    println!("Distance: {}", lowest_distance)
+    println!("Part 1 Shortest Distance: {}", shortest_distance);
+    println!("Part 2 Longest Distance: {}", longest_distance);
 }
