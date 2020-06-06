@@ -30,7 +30,7 @@ fn main() {
     println!("{}", part1(String::from("1211")) == String::from("111221"));
 
     let mut input = String::from("1113122113");
-    for i in 0..50 {
+    for _ in 0..50 {
         input = part1(input);
     }
 
