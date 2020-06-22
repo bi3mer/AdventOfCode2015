@@ -10,6 +10,7 @@ md5 = "0.6.1"
 itertools = "0.9"
 serde_json = "1.0"
 regex = "1"
+rand = "0.7"
 
 [[bin]]
 name = "01"
@@ -82,3 +83,7 @@ path = "src/17.rs"
 [[bin]]
 name = "18"
 path = "src/18.rs"
+
+[[bin]]
+name = "19"
+path = "src/19.rs"
