@@ -100,9 +100,6 @@ fn test(ph: i16, pd: i16, pa: i16, bh: i16, bd: i16, ba: i16) {
 
 fn main() {
     test(8, 5, 5, 12, 7, 2);
-    test(100, 4, 6, 104, 8, 1);
-    test(100, 13, 0, 104, 8, 1);
-    test(100, 10, 0, 104, 8, 1);
 
     let mut player = Character {
         original_hit_points: 100,
