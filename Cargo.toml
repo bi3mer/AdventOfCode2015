@@ -11,6 +11,7 @@ itertools = "0.9"
 serde_json = "1.0"
 regex = "1"
 rand = "0.7"
+priority-queue = "1.0.0"
 
 [[bin]]
 name = "01"
@@ -91,3 +92,7 @@ path = "src/19.rs"
 [[bin]]
 name = "20"
 path = "src/20.rs"
+
+[[bin]]
+name = "21"
+path = "src/21.rs"
